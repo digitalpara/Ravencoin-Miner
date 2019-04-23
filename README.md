@@ -37,3 +37,17 @@ RVN: RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ
 Built from source on Windows 10.
 
 Compile on Linux
+
+
+Further optimizations to all hash functions
+Improvements to hash rate stability
+
+vs2013 / cuda 9.2 / x32 / x64
+
+default dev fee lowered from 1% to 0%
+
+if this helped you please make a one time donation:
+RVN donation address: RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ
+
+or you can use:
+--donate 1
