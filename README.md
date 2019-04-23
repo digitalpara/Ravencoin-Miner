@@ -1,4 +1,4 @@
-# Ravencoin-Miner
+# Ravencoin-Miner 3.00
 An optimized fork of ccminer developed for Ravencoin.
 Based on Christian Buchner's & Christian H.'s CUDA project, no longer active on github since 2014.
 Example .bat file fail over script
@@ -8,9 +8,9 @@ This is the example .bat file provided with the miner. Feel free to use this or 
 :: BiNGO!
 :MINE
 ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH -p d=8 -i 20 -r 5 -N 600
-ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
-ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH -p d=8 -i 20 -r 3 -N 600
-ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
+ccminer -a x16r --eco -o stratum+tcp://eu.ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
+ccminer -a x16r --eco -o stratum+tcp://us.ravenminer.com:3636 -u RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH -p d=8 -i 20 -r 3 -N 600
+ccminer -a x16r --eco -o stratum+tcp://asia.ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
 GOTO :MINE
 
 
