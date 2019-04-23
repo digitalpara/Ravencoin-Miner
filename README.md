@@ -1,0 +1,34 @@
+# Ravencoin-Miner
+An optimized fork of ccminer developed for Ravencoin.
+Based on Christian Buchner's & Christian H.'s CUDA project, no longer active on github since 2014.
+Example .bat file fail over script
+This is the example .bat file provided with the miner. Feel free to use this or your own .bat file.
+===========================================================================================================================
+:: BiNGO!
+:MINE
+ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH -p d=8 -i 20 -r 5 -N 600
+ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
+ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH -p d=8 -i 20 -r 3 -N 600
+ccminer -a x16r --eco -o stratum+tcp://ravenminer.com:3636 -u RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ -p d=8 -i 20 -r 3 -N 600
+GOTO :MINE
+===========================================================================================================================
+
+Replace the pool connection information with your preferred Ravencoin pool
+Replace the wallet address with your own
+Most Ravencoin pools can have anything after -p, generally it is used as a worker name
+Set Stratum difficulty with d=X
+Recommended difficulty setting:
+d=HASHRATE/2
+d=HASHRATE/3
+Set Intensity with -i, default is 19
+Set Donation % with --donate
+Set number of times miner will try to reconnect to pool before moving to next connection in script with -r
+-N 600 Makes the mining program use 600 shares in the calculation of the average hash rate that is displayed on Accepted share lines
+This has the effect of stabilizing the displayed hash rate
+Donation Addresses
+Consider supporting the contributors to this miner by donating to the following addresses:
+
+RVN: RQUJPw3ewenmuTVu1CzS87b12BZa1F7zsZ
+Built from source on Windows 10.
+
+Compile on Linux
